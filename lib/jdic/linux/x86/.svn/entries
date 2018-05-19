@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="25"
+   name=""
+   committed-date="2005-08-14T21:42:45.719508Z"
+   url="http://svn.sourcesecure.co.uk/osflash/samui/trunk/lib/jdic/linux/x86"
+   last-author="ndesy"
+   kind="dir"
+   revision="26"/>
+<entry
+   committed-rev="25"
+   name="libjdic.so"
+   text-time="2005-06-23T17:25:40.000000Z"
+   committed-date="2005-08-14T21:42:45.719508Z"
+   checksum="f3b9fe380152f8e1e301ead994644205"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-14T21:41:42.057466Z"/>
+<entry
+   committed-rev="25"
+   name="mozembed-linux-gtk1.2"
+   text-time="2005-06-23T17:37:22.000000Z"
+   committed-date="2005-08-14T21:42:45.719508Z"
+   checksum="4977eae2885922614ee621364eff8407"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-14T21:41:42.135591Z"/>
+<entry
+   committed-rev="25"
+   name="mozembed-linux-gtk2"
+   text-time="2005-06-23T17:25:46.000000Z"
+   committed-date="2005-08-14T21:42:45.719508Z"
+   checksum="1e30365c6f1015f6ad8b7e4053085b29"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-14T21:41:42.166841Z"/>
+<entry
+   committed-rev="25"
+   name="libtray.so"
+   text-time="2005-06-23T17:25:40.000000Z"
+   committed-date="2005-08-14T21:42:45.719508Z"
+   checksum="bd61c3641d8455704b77d303374ffcac"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-14T21:41:42.119966Z"/>
+<entry
+   committed-rev="25"
+   name="libmozembed-linux-gtk1.2.so"
+   text-time="2005-06-23T17:37:22.000000Z"
+   committed-date="2005-08-14T21:42:45.719508Z"
+   checksum="b9bcf93d41e156314fe5ed9435981eab"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-14T21:41:42.073091Z"/>
+<entry
+   committed-rev="25"
+   name="libmozembed-linux-gtk2.so"
+   text-time="2005-06-23T17:25:46.000000Z"
+   committed-date="2005-08-14T21:42:45.719508Z"
+   checksum="4d9341531d1fd5dbedeb7a2d351223a4"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-14T21:41:42.088716Z"/>
+</wc-entries>

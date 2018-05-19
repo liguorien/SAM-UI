@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="25"
+   name=""
+   committed-date="2005-08-14T21:42:45.719508Z"
+   url="http://svn.sourcesecure.co.uk/osflash/samui/trunk/lib/jdic/windows/x86"
+   last-author="ndesy"
+   kind="dir"
+   revision="26"/>
+<entry
+   committed-rev="25"
+   name="MozEmbed.exe"
+   text-time="2005-06-23T17:44:32.000000Z"
+   committed-date="2005-08-14T21:42:45.719508Z"
+   checksum="a70e322216d849d8d18783f53965c81f"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-14T21:41:42.369966Z"/>
+<entry
+   committed-rev="25"
+   name="jdic.dll"
+   text-time="2005-06-23T17:44:32.000000Z"
+   committed-date="2005-08-14T21:42:45.719508Z"
+   checksum="3550f98a746d45e131511c7e4c22d07c"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-14T21:41:42.354341Z"/>
+<entry
+   committed-rev="25"
+   name="tray.dll"
+   text-time="2005-06-23T17:44:32.000000Z"
+   committed-date="2005-08-14T21:42:45.719508Z"
+   checksum="570716465a2daab70531baf10c4863a2"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-14T21:41:42.385591Z"/>
+<entry
+   committed-rev="25"
+   name="IeEmbed.exe"
+   text-time="2005-06-23T17:44:32.000000Z"
+   committed-date="2005-08-14T21:42:45.719508Z"
+   checksum="9babac262726addef6afb5a5bbb4471a"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-14T21:41:42.354341Z"/>
+</wc-entries>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2005-08-09T01:54:36.761416Z"
+   url="http://svn.sourcesecure.co.uk/osflash/samui/trunk/src/com/l2fprod/common/swing/tree"
+   last-author="ndesy"
+   kind="dir"
+   uuid="3a049629-d2fd-0310-b6cd-bfd351412b0e"
+   revision="26"/>
+<entry
+   committed-rev="1"
+   name="LazyMutableTreeNode.java"
+   text-time="2005-08-09T02:04:56.953125Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="381d60df658562d9ae83c84ad9dfbbd7"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:56.937500Z"/>
+</wc-entries>

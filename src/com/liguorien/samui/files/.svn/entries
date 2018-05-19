@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="24"
+   name=""
+   committed-date="2005-08-14T21:41:06.716017Z"
+   url="http://svn.sourcesecure.co.uk/osflash/samui/trunk/src/com/liguorien/samui/files"
+   last-author="ndesy"
+   kind="dir"
+   uuid="3a049629-d2fd-0310-b6cd-bfd351412b0e"
+   revision="26"/>
+<entry
+   committed-rev="1"
+   name="library-folder-open.gif"
+   text-time="2005-08-09T02:05:01.718750Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="53b8473ff44df44dfc1f8b58d3e23d54"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:01.562500Z"/>
+<entry
+   committed-rev="24"
+   name="SamuiProfiler.as"
+   text-time="2005-08-14T19:25:49.854341Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="394fca9e717fc139af030a8d1a741d15"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:01.578125Z"/>
+<entry
+   committed-rev="1"
+   name="timer.gif"
+   text-time="2005-08-09T02:05:01.781250Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="f72d15b23f4e5f25865999f4d819a672"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:01.609375Z"/>
+<entry
+   committed-rev="1"
+   name="library-folder-close.gif"
+   text-time="2005-08-09T02:05:01.765625Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="1519d2bae6a054afc623efc87b4614fb"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:01.593750Z"/>
+<entry
+   committed-rev="1"
+   name="newfolder.gif"
+   text-time="2005-08-09T02:05:01.812500Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="36e6e6b943b4de585c87fcdc634c0441"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:01.640625Z"/>
+<entry
+   committed-rev="24"
+   name="swf-icon.gif"
+   text-time="2005-08-12T19:42:41.953125Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="86318a810e10282237c421002fb9ffca"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-14T21:40:03.260591Z"/>
+<entry
+   committed-rev="24"
+   name="build.properties"
+   text-time="2005-08-14T21:20:57.979341Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="dd97708b3ce6edcc1680b72269e9618f"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:01.656250Z"/>
+<entry
+   committed-rev="24"
+   name="build.xml"
+   text-time="2005-08-14T17:00:47.573091Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="f02891038f77eec8e24fecbbea7fba15"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:01.703125Z"/>
+<entry
+   committed-rev="1"
+   name="sam-ui.gif"
+   text-time="2005-08-09T02:05:01.718750Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="a1f80fcbd3acc48342fa24847335c293"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:01.515625Z"/>
+<entry
+   committed-rev="24"
+   name="SamuiOutput.as"
+   text-time="2005-08-14T19:26:41.979341Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="3092beb162cf2533284157fc6509c86d"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:01.578125Z"/>
+<entry
+   committed-rev="24"
+   name="SamuiProfilerOutput.as"
+   text-time="2005-08-14T19:27:04.588716Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="005fa86a707983d833d0d39e9211d487"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:01.593750Z"/>
+<entry
+   committed-rev="24"
+   name="SamuiStack.as"
+   text-time="2005-08-14T19:32:39.369966Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="a316c586123131f86484c4e83e21490f"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:01.609375Z"/>
+<entry
+   committed-rev="1"
+   name="trashcan.gif"
+   text-time="2005-08-09T02:05:01.796875Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="0c805cf10f0f05c82f3afde40ed81ce6"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:01.640625Z"/>
+<entry
+   committed-rev="24"
+   name="build-project.gif"
+   text-time="2005-05-04T02:20:40.000000Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="1297f30d45c766f5bd5d438a3200509a"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-14T21:40:03.182466Z"/>
+<entry
+   committed-rev="1"
+   name="library-symbol.gif"
+   text-time="2005-08-09T02:05:01.828125Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="cbe5a6f6795918e0a71e4af3e7956f1c"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:01.656250Z"/>
+<entry
+   committed-rev="1"
+   name="newitem.gif"
+   text-time="2005-08-09T02:05:01.843750Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="6765cbb507cbee55b78c3bb07ab1d13a"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:01.687500Z"/>
+<entry
+   committed-rev="1"
+   name="library-folder.xml"
+   text-time="2005-08-09T02:05:01.828125Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="41cdc88b91e39c235cd89382ca34074e"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:01.671875Z"/>
+<entry
+   committed-rev="24"
+   name="run-project.gif"
+   text-time="2005-05-04T02:20:40.000000Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="c6ea2727455e01470ebed9ef3043c7ba"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-14T21:40:03.229341Z"/>
+</wc-entries>

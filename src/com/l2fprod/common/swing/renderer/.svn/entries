@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2005-08-09T01:54:36.761416Z"
+   url="http://svn.sourcesecure.co.uk/osflash/samui/trunk/src/com/l2fprod/common/swing/renderer"
+   last-author="ndesy"
+   kind="dir"
+   uuid="3a049629-d2fd-0310-b6cd-bfd351412b0e"
+   revision="26"/>
+<entry
+   committed-rev="1"
+   name="DateRenderer.java"
+   text-time="2005-08-09T02:04:53.609375Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="af1c33c1f494bde4c662d9b2858e63a1"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:53.562500Z"/>
+<entry
+   committed-rev="1"
+   name="ColorCellRenderer.java"
+   text-time="2005-08-09T02:04:53.625000Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="9859cd88cd5ca74c61569a96ea32b470"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:53.578125Z"/>
+<entry
+   committed-rev="1"
+   name="BooleanCellRenderer.java"
+   text-time="2005-08-09T02:04:53.640625Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="cceb5ab7bba6d6af3f9bb572971632a3"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:53.578125Z"/>
+<entry
+   committed-rev="1"
+   name="DefaultCellRenderer.java"
+   text-time="2005-08-09T02:04:53.656250Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="736e0efb9b6ff990f7d012f69951ebd1"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:53.593750Z"/>
+</wc-entries>

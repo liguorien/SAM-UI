@@ -1,0 +1,113 @@
+/*
+ * MethodTableModel.java
+ *
+ * Created on August 3, 2005, 11:05 PM
+ *
+ * Copyright 2005  Nicolas Désy.  All rights reserved.
+ *
+ *   This file is part of SAM-UI
+ *
+ *   SAM-UI is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 2 of the License, or
+ *   (at your option) any later version.
+ *
+ *   Foobar is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with SAM-UI; if not, write to the Free Software
+ *   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+ */
+package com.liguorien.samui.profiler;
+
+import javax.swing.table.*;
+import java.util.*;
+
+/**
+ *
+ * @author Nicolas Désy - http://www.liguorien.com/blog/
+ */
+public class MethodTableModel extends AbstractTableModel {
+    
+    private List<MethodResult> _methods;
+    private List<MethodResult> _results;
+    
+    private int _currentClassID = -1;
+    
+    /** Creates a new instance of ClassTableModel */
+    public MethodTableModel(List<MethodResult> m) {
+        super();
+        _results = _methods = m;
+    }
+    
+    public int getColumnCount() {
+        return 6;
+    }
+    
+    public int getRowCount() {
+        return _results.size();
+    }
+    
+    public Object getValueAt(int index, int column) {
+        final MethodResult result = _results.get(index);
+        if(column==0 || column==4) return result.getMaximumTime();
+        if(column==1) return result.toString();
+        if(column==2) return result.getMinimumTime();
+        if(column==3) return result.getAverageTime();
+        return result.getInvocationNumber();
+    }
+    
+    public String getColumnName(int column) {
+        switch(column){
+            case 0 : return " ";
+            case 1 : return "method name";
+            case 2 : return "min";
+            case 3 : return "avg";
+            case 4 : return "max";
+            case 5 : return "invocation";
+        }
+        return " ";
+    }
+    
+    public synchronized void filterClass(int classID){
+        if(_currentClassID != classID){
+            _results = new ArrayList<MethodResult>();
+            
+            for(MethodResult result : _methods){
+                if(result.classID == classID){
+                    _results.add(result);
+                }
+            }
+            _currentClassID = classID;
+            fireTableDataChanged();
+        }
+    }
+    
+    public MethodResult getResultAt(int index){
+        return  _results.get(index);
+    }
+    
+    private int lastSortedIndex = -1;
+    
+    public void sortByColumnIndex(int index){
+        synchronized(_results){
+            if(lastSortedIndex != index){
+                switch(index){
+                    case 0 : Collections.sort(_results, ProfilerStats.METHOD_MAXIMUM_COMPARATOR); break;
+                    case 1 : Collections.sort(_results, ProfilerStats.METHOD_NAME_COMPARATOR); break;
+                    case 2 : Collections.sort(_results, ProfilerStats.METHOD_MINIMUM_COMPARATOR); break;
+                    case 3 : Collections.sort(_results, ProfilerStats.METHOD_AVERAGE_COMPARATOR); break;
+                    case 4 : Collections.sort(_results, ProfilerStats.METHOD_MAXIMUM_COMPARATOR); break;
+                    case 5 : Collections.sort(_results, ProfilerStats.METHOD_INVOKATION_COMPARATOR); break;
+                }
+            }else{
+                Collections.reverse(_results);
+            }            
+            lastSortedIndex = index;
+        }
+        fireTableDataChanged();
+    }
+}

@@ -1,0 +1,91 @@
+/*
+ * OpenCompilePopupListener.java
+ *
+ * Created on July 2, 2005, 11:12 AM
+ *
+ * Copyright 2005  Nicolas Désy.  All rights reserved.
+ *
+ *   This file is part of SAM-UI
+ *
+ *   SAM-UI is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 2 of the License, or
+ *   (at your option) any later version.
+ *
+ *   Foobar is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with SAM-UI; if not, write to the Free Software
+ *   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+ */
+
+package com.liguorien.samui.project;
+
+import com.liguorien.samui.MainUI;
+import com.liguorien.samui.library.LibraryButton;
+import java.awt.Dimension;
+import java.awt.EventQueue;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.imageio.ImageIO;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+
+/**
+ *
+ * @author Nicolas Désy - http://www.liguorien.com/blog/
+ */
+public class OpenCompilePopupListener implements ActionListener, Runnable {
+    
+    public void actionPerformed(ActionEvent evt){
+        EventQueue.invokeLater(this);
+    }
+    
+    public void run(){
+        
+        //creating a JFrame for the shorcut
+        final JFrame frame = new JFrame("SAM-UI - compilation shortcut");
+        frame.setAlwaysOnTop(true);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.setLocationRelativeTo(MainUI.getInstance());
+        frame.setSize(100,80);
+        
+        //set frame's icon
+        try{
+            frame.setIconImage(ImageIO.read(getClass().getResourceAsStream("/com/liguorien/samui/files/sam-ui.gif")));
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
+        
+              
+        final Dimension dim = new Dimension(30, 30);
+        
+        final JButton cBtn = new LibraryButton("/com/liguorien/samui/files/build-project.gif", "Build Project");
+        cBtn.addActionListener(new CompileProjectListener());
+        cBtn.setMaximumSize(dim);
+        cBtn.setMinimumSize(dim);
+        cBtn.setPreferredSize(dim);
+        frame.add(cBtn);
+        
+        final JButton rBtn = new LibraryButton("/com/liguorien/samui/files/run-project.gif", "Run Project");
+        rBtn.addActionListener(new CompileProjectListener(true));
+        rBtn.setMaximumSize(dim);
+        rBtn.setMinimumSize(dim);
+        rBtn.setPreferredSize(dim);
+        frame.add(rBtn);
+        
+             
+        frame.setLayout(new FlowLayout(FlowLayout.CENTER));
+        
+        frame.setVisible(true);
+    }
+}
+
+
+

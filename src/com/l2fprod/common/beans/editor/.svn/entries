@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2005-08-09T01:54:36.761416Z"
+   url="http://svn.sourcesecure.co.uk/osflash/samui/trunk/src/com/l2fprod/common/beans/editor"
+   last-author="ndesy"
+   kind="dir"
+   uuid="3a049629-d2fd-0310-b6cd-bfd351412b0e"
+   revision="26"/>
+<entry
+   committed-rev="1"
+   name="DimensionPropertyEditor.java"
+   text-time="2005-08-09T02:04:58.781250Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="9b40671dd30ff70943d36d73ee8799d8"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.531250Z"/>
+<entry
+   committed-rev="1"
+   name="NumberPropertyEditor.java"
+   text-time="2005-08-09T02:04:58.796875Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="0bac38b5e56f72f2068c4b8ec266feab"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.531250Z"/>
+<entry
+   committed-rev="1"
+   name="AllRB.properties"
+   text-time="2005-08-09T02:04:58.812500Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="edbbab0c40eacbaa15af1521a4fa1c14"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.546875Z"/>
+<entry
+   committed-rev="1"
+   name="IntegerPropertyEditor.java"
+   text-time="2005-08-09T02:04:58.828125Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="20154cb7c7eb10934c1df6e59223008d"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.546875Z"/>
+<entry
+   committed-rev="1"
+   name="StringConverterPropertyEditor.java"
+   text-time="2005-08-09T02:04:58.843750Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="9c41992dc9d43ecf8205c569c8777545"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.562500Z"/>
+<entry
+   committed-rev="1"
+   name="LongPropertyEditor.java"
+   text-time="2005-08-09T02:04:58.843750Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="a28ad25387c1bdccfe05f2de3a243126"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.578125Z"/>
+<entry
+   committed-rev="1"
+   name="ShortPropertyEditor.java"
+   text-time="2005-08-09T02:04:58.859375Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="f14aeac9da0f7efb30755f1f60c94663"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.593750Z"/>
+<entry
+   committed-rev="1"
+   name="package.html"
+   text-time="2005-08-09T02:04:58.875000Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="f9b6fa374646a8bfce575591f1d02440"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.593750Z"/>
+<entry
+   committed-rev="1"
+   name="AbstractPropertyEditor.java"
+   text-time="2005-08-09T02:04:58.875000Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="040b983c6c728444cbc189d59317eba9"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.593750Z"/>
+<entry
+   committed-rev="1"
+   name="DirectoryPropertyEditor.java"
+   text-time="2005-08-09T02:04:58.890625Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="13cda806e2c8afe78519b6db641b65f2"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.609375Z"/>
+<entry
+   committed-rev="1"
+   name="RectanglePropertyEditor.java"
+   text-time="2005-08-09T02:04:58.906250Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="cd575c70b315c87a435b8881df50e09e"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.625000Z"/>
+<entry
+   committed-rev="1"
+   name="InsetsPropertyEditor.java"
+   text-time="2005-08-09T02:04:58.906250Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="424ce0c310f2ccbe18a4720455430b97"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.625000Z"/>
+<entry
+   committed-rev="1"
+   name="FloatPropertyEditor.java"
+   text-time="2005-08-09T02:04:58.921875Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="64049a6e5166d365ab435fb4a3961e96"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.640625Z"/>
+<entry
+   committed-rev="1"
+   name="FontPropertyEditor.java"
+   text-time="2005-08-09T02:04:58.937500Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="6f3a4dd5bf1bde9aafa2c177ec5e375c"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.640625Z"/>
+<entry
+   committed-rev="1"
+   name="StringPropertyEditor.java"
+   text-time="2005-08-09T02:04:58.937500Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="87342136031b51fbbfc2fc31ac9c70c8"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.656250Z"/>
+<entry
+   committed-rev="1"
+   name="ComboBoxPropertyEditor.java"
+   text-time="2005-08-09T02:04:58.953125Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="cfb32768a26dad6f68fcf12710a80fd2"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.671875Z"/>
+<entry
+   committed-rev="1"
+   name="DoublePropertyEditor.java"
+   text-time="2005-08-09T02:04:58.968750Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="5c844b4a4feb90f9d5b0f1c148da4aec"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.687500Z"/>
+<entry
+   committed-rev="1"
+   name="BooleanAsCheckBoxPropertyEditor.java"
+   text-time="2005-08-09T02:04:58.984375Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="1433895f6f60578e129f6bd7abb70842"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.703125Z"/>
+<entry
+   committed-rev="1"
+   name="ColorPropertyEditor.java"
+   text-time="2005-08-09T02:04:58.984375Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="cc5a5f369296ed8ec259e74aeb1c675e"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.703125Z"/>
+<entry
+   committed-rev="1"
+   name="FixedButton.java"
+   text-time="2005-08-09T02:04:59.000000Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="5149035339f9eec071a0888f078e5e3a"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.734375Z"/>
+<entry
+   committed-rev="1"
+   name="FilePropertyEditor.java"
+   text-time="2005-08-09T02:04:59.015625Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="7f45b0d34e191476491eb8d0b452c80c"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.750000Z"/>
+<entry
+   committed-rev="1"
+   name="BooleanPropertyEditor.java"
+   text-time="2005-08-09T02:04:59.015625Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="d30681f6b26caa9ef6d9536397769a75"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:58.765625Z"/>
+</wc-entries>

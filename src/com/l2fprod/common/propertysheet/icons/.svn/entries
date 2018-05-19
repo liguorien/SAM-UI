@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2005-08-09T01:54:36.761416Z"
+   url="http://svn.sourcesecure.co.uk/osflash/samui/trunk/src/com/l2fprod/common/propertysheet/icons"
+   last-author="ndesy"
+   kind="dir"
+   uuid="3a049629-d2fd-0310-b6cd-bfd351412b0e"
+   revision="26"/>
+<entry
+   committed-rev="1"
+   name="category.gif"
+   text-time="2005-08-09T02:04:59.562500Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="0c76600cea5b7eace5fb8633a5fdaa9f"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:59.515625Z"/>
+<entry
+   committed-rev="1"
+   name="description.gif"
+   text-time="2005-08-09T02:04:59.578125Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="d1e7bbd6d8c0bf9fafc6e506ea63c09a"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:59.531250Z"/>
+<entry
+   committed-rev="1"
+   name="sort.gif"
+   text-time="2005-08-09T02:04:59.593750Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="8716847583158e798e17242b4d2cec66"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:59.546875Z"/>
+</wc-entries>

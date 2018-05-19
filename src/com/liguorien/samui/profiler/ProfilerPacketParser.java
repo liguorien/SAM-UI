@@ -1,0 +1,138 @@
+/*
+ * ProfilerPacketParser.java
+ *
+ * Created on July 10, 2005, 12:10 PM
+ *
+ * Copyright 2005  Nicolas Désy.  All rights reserved.
+ *
+ *   This file is part of SAM-UI
+ *
+ *   SAM-UI is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 2 of the License, or
+ *   (at your option) any later version.
+ *
+ *   Foobar is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with SAM-UI; if not, write to the Free Software
+ *   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+ */
+
+package com.liguorien.samui.profiler;
+
+import com.sun.org.apache.xpath.internal.XPathAPI;
+import org.w3c.dom.Document;
+
+
+/**
+ *
+ * @author Nicolas Désy - http://www.liguorien.com/blog/
+ */
+public class ProfilerPacketParser {
+    
+    private StackElement _main;
+    private String[] _string;
+    private ProfilerStats _stats;
+    
+    
+    public void readDOM(Document doc){
+        _string = doc.getFirstChild().getFirstChild().getFirstChild().getNodeValue().split("\\|");
+        _parsePacket(doc.getFirstChild().getChildNodes().item(1).getFirstChild().getNodeValue());
+    }
+    
+    private void _parsePacket(String packet){
+        
+        _stats = new ProfilerStats(_string);
+        
+        StackElement current = _main = new StackElement(null){
+            public String toString(){
+                return "Main";
+            }
+        };
+        
+        final char[] chars = packet.toCharArray();
+        final int length = chars.length;
+        int currentDigit = 0;
+        int digitLength = 0;
+        int level = 0;
+        
+        for(int i=0; i<length; i++){
+            
+            switch(chars[i]){
+                
+                case '<' :
+                    
+                    if(digitLength > 0){
+                        current.time = _parseInt(chars, i-digitLength, i);
+                    }
+                    
+                    currentDigit = 0;
+                    digitLength = 0;
+                    
+                    current = new StackElement(current);
+                    
+                    break;
+                    
+                case ',' :
+                    
+                    switch(currentDigit++){
+                        case 0 :
+                            current.classID = _parseInt(chars, i-digitLength, i);
+                            current.className = _string[current.classID];
+                            break;
+                        case 1 :
+                            current.methodID = _parseInt(chars, i-digitLength, i);
+                            current.methodName = _string[current.methodID];
+                            break;
+                    }
+                    
+                    digitLength = 0;
+                    
+                    break;
+                    
+                case '>' :
+                    
+                    if(current.time == -1){
+                        current.time = _parseInt(chars, i-digitLength, i);
+                    }
+                    
+                    _stats.addStackElement(current);
+                    currentDigit = 0;
+                    digitLength = 0;
+                    current.isOpen = false;
+                    current = current.getParentStack();
+                    
+                    break;
+                    
+                default :  digitLength++;   break;
+            }
+        }
+    }
+    
+    
+    
+    private int _parseInt(char[] str, int offset, int limit){
+        
+        int result = ((int)str[offset++])-48;
+        
+        while (offset < limit) {
+            result *= 10;
+            result += ((int)str[offset++])-48;
+        }
+        
+        return result;
+    }
+    
+    
+    public StackElement getMainStack(){
+        return _main;
+    }
+    
+    public ProfilerStats getStats(){
+        return _stats;
+    }
+}

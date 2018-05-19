@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<project name="MyProject" basedir="." default="compile">
+	
+    <property file="build.properties"/>			
+
+    <target name="compile">		
+
+        <condition property="strict" value="-strict" else="">			
+            <istrue value="${mtasc.strict}" />
+        </condition>
+
+        <condition property="verbose" value="-v" else="">			
+            <istrue value="${mtasc.verbose}" />
+        </condition>
+
+        <condition property="mx" value="-mx" else="">			
+            <istrue value="${mtasc.mx}" />
+        </condition>
+
+        <condition property="keep" value="-keep" else="">			
+            <istrue value="${mtasc.keep}" />
+        </condition>
+
+        <condition property="group" value="-group" else="">			
+            <istrue value="${mtasc.group}" />
+        </condition>        
+
+        <condition property="msvc" value="-msvc" else="">			
+            <istrue value="${mtasc.msvc}" />
+        </condition>        
+
+        <condition property="samui-output" value="-trace SamuiOutput.log -cp src SamuiOutput.as" else="">			
+            <istrue value="${samui.output}" />
+        </condition>
+
+        <condition property="output-mode" value="-trace SamuiProfilerOutput.log -cp src SamuiProfilerOutput.as" else="${samui-output}">			
+            <istrue value="${samui.profiler}" />
+        </condition>
+
+        <condition property="main-class" value="-main ${project.mainclass}" else="">                   
+            <isfalse value="${project.natural}" />                  
+        </condition>
+
+        <condition property="mtasc.cmd" value="mtasc" else="${mtasc.home}">                   
+            <equals arg1="${mtasc.home}" arg2=""/>                              
+        </condition>
+        
+        <condition property="swfmill.cmd" value="swfmill" else="${swfmill.home}">                   
+            <equals arg1="${swfmill.home}" arg2=""/>                              
+        </condition>
+        
+        <echo>${mtasc.cmd} ${mtasc.classpath} ${main-class} -swf classes.swf -header ${project.width}:${project.height}:${project.framerate}:${project.bgcolor} ${strict} ${verbose} ${group} ${msvc} -version ${mtasc.version} -frame ${mtasc.export} ${mtasc.optional} ${output-mode} ${linked.classes}</echo>	
+
+        <exec executable="${mtasc.cmd}" failonerror="true">
+            <arg line="${mtasc.classpath}"/>          
+            <arg line="${main-class}"/>
+            <arg line="-swf classes.swf"/>
+            <arg line="-header ${project.width}:${project.height}:${project.framerate}:${project.bgcolor}"/>
+            <arg line="${strict}"/>
+            <arg line="${verbose}"/>
+            <arg line="${group}"/>
+            <arg line="${msvc}" />
+            <arg line="-version ${mtasc.version}" />
+            <arg line="-frame ${mtasc.export}" />
+            <arg line="${mx}"/>
+            <arg line="${keep}"/>				
+            <arg line="${mtasc.optional}"/>
+            <arg line="${output-mode}" />
+            <arg line="${linked.classes}" />
+        </exec>                
+
+        <echo>${swfmill.cmd} simple library.xml ${project.swf}</echo>
+        
+        <exec executable="${swfmill.cmd}" failonerror="true">		
+            <arg line="simple" />
+            <arg line="library.xml" />
+            <arg line="${project.swf}" />			
+        </exec>
+
+    </target>	
+</project>

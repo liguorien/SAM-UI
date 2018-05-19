@@ -1,0 +1,254 @@
+/*
+ * ProfilerStats.java
+ *
+ * Created on July 12, 2005, 8:43 PM
+ *
+ * Copyright 2005  Nicolas Désy.  All rights reserved.
+ *
+ *   This file is part of SAM-UI
+ *
+ *   SAM-UI is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 2 of the License, or
+ *   (at your option) any later version.
+ *
+ *   Foobar is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with SAM-UI; if not, write to the Free Software
+ *   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+ */
+
+package com.liguorien.samui.profiler;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
+
+/**
+ *
+ * @author Nicolas Désy - http://www.liguorien.com/blog/
+ */
+public class ProfilerStats {
+    
+    private String[] _labels;
+    
+    private final List<StackElement> _stacks = new ArrayList<StackElement>();
+    private final List<ClassResult> _classes = new ArrayList<ClassResult>();
+    private final List<MethodResult> _methods = new ArrayList<MethodResult>();
+    
+    public ProfilerStats(String[] str){
+        _labels = str;
+    }
+    
+    public String getLabel(int key){
+        return _labels[key];
+    }
+    
+    public void addMethodResult(MethodResult result){
+        _methods.add(result);
+    }
+    
+    public List<ClassResult> getClassResults(){
+        return _classes;
+    }
+    
+    public List<MethodResult> getMethodResults(){
+        return _methods;
+    }
+    
+    public List<StackElement> getStackElements(){
+        return _stacks;
+    }
+    
+    public void addStackElement(StackElement el){
+                              
+       _stacks.add(el);
+        
+        ClassResult clazz = ProfilerStats.getResultByMethodID(_classes, el.classID);
+        if(clazz == null){
+            clazz = new ClassResult(this, el.classID);
+            _classes.add(clazz);
+        }
+        clazz.addStackElement(el);      
+    }
+    
+    public static <T extends AbstractResult> T getResultByMethodID(List<T> results, int methodID){
+        for(T result : results){
+            if(result.methodID == methodID) return result;
+        }
+        return null;
+    }
+    
+    
+    
+    public final static Comparator<StackElement> STACK_TIME_COMPARATOR = new Comparator<StackElement>(){
+        public int compare(StackElement s1, StackElement s2) {
+            if(s1.time > s2.time) return -1;
+            if(s1.time == s2.time) return 0;
+            return 1;
+        }
+    };
+    
+    
+    public final static Comparator<StackElement> STACK_NAME_COMPARATOR = new Comparator<StackElement>(){
+        public int compare(StackElement s1, StackElement s2) {        
+            return s1.toString().compareTo(s2.toString());
+        }
+    };
+    
+    public final static Comparator<StackElement> STACK_INVOCATION_COMPARATOR = new Comparator<StackElement>(){
+        public int compare(StackElement s1, StackElement s2) {
+            if(s1.getSubInvocation() > s2.getSubInvocation()) return -1;
+            if(s1.getSubInvocation() == s2.getSubInvocation()) return 0;
+            return 1;
+        }
+    };
+    
+    public final static Comparator<AbstractResult> NAME_COMPARATOR = new Comparator<AbstractResult>(){
+        public int compare(AbstractResult s1, AbstractResult s2) {
+             return s1.toString().compareTo(s2.toString());
+        }
+    };
+    
+    public final static Comparator<ClassResult> CLASS_MAXIMUM_COMPARATOR = new Comparator<ClassResult>(){
+        public int compare(ClassResult s1, ClassResult s2) {        
+            if(s1.getMaximumTime() > s2.getMaximumTime()) return -1;
+            if(s1.getMaximumTime() == s2.getMaximumTime()) return 0;
+            return 1;
+        }
+    };
+    
+    
+    
+    public final static Comparator<ClassResult> CLASS_INVOCATION_COMPARATOR = new Comparator<ClassResult>(){
+        public int compare(ClassResult s1, ClassResult s2) {
+            if(s1.getTotalMethodInvocation() < s2.getTotalMethodInvocation()) return -1;
+            if(s1.getTotalMethodInvocation() == s2.getTotalMethodInvocation()) return 0;
+            return 1;
+        }
+    };
+    
+    public final static Comparator<MethodResult> METHOD_NAME_COMPARATOR = new Comparator<MethodResult>(){
+        public int compare(MethodResult s1, MethodResult s2) {        
+            return s1.toString().compareTo(s2.toString());
+        }
+    };
+    
+    public final static Comparator<MethodResult> METHOD_MINIMUM_COMPARATOR = new Comparator<MethodResult>(){
+        public int compare(MethodResult s1, MethodResult s2) {
+            if(s1.getMinimumTime() > s2.getMinimumTime()) return -1;
+            if(s1.getMinimumTime() == s2.getMinimumTime()) return 0;
+            return 1;
+        }
+    };
+    
+    public final static Comparator<MethodResult> METHOD_MAXIMUM_COMPARATOR = new Comparator<MethodResult>(){
+        public int compare(MethodResult s1, MethodResult s2) {
+            if(s1.getMaximumTime() > s2.getMaximumTime()) return -1;
+            if(s1.getMaximumTime() == s2.getMaximumTime()) return 0;
+            return 1;
+        }
+    };
+    
+    public final static Comparator<MethodResult> METHOD_AVERAGE_COMPARATOR = new Comparator<MethodResult>(){
+        public int compare(MethodResult s1, MethodResult s2) {
+            if(s1.getAverageTime() > s2.getAverageTime()) return -1;
+            if(s1.getAverageTime() == s2.getAverageTime()) return 0;
+            return 1;
+        }
+    };
+    
+    public final static Comparator<MethodResult> METHOD_INVOKATION_COMPARATOR = new Comparator<MethodResult>(){
+        public int compare(MethodResult s1, MethodResult s2) {
+            if(s1.getInvocationNumber() > s2.getInvocationNumber()) return -1;
+            if(s1.getInvocationNumber() == s2.getInvocationNumber()) return 0;
+            return 1;
+        }
+    };
+    
+    
+        
+        /*
+    public static class AbstractResult {
+        public int classID;
+        public int methodID;
+    }
+         
+    public static class ClassResult extends AbstractResult{
+         
+        private final List<MethodResult> _methods = new ArrayList<MethodResult>();
+         
+        public ClassResult(int classID){
+            this.classID = classID;
+        }
+         
+        public MethodResult getMethodResultByID(int methodID){
+            final int length = _methods.size();
+            for(int i=0; i<length; i++){
+                final MethodResult result = _methods.get(i);
+                if(result.methodID == methodID) return result;
+            }
+            return null;
+        }
+         
+        public void addStackElement(StackElement el){
+            MethodResult method = getMethodResultByID(el.methodNameID);
+            if(method == null){
+                method = new MethodResult(classID, el.methodNameID);
+                _methods.add(method);
+            }
+            method.addStackElement(el);
+        }
+    }
+         
+         
+         
+    public static class MethodResult extends AbstractResult{
+         
+        private int minimumTime = Integer.MIN_VALUE;
+        private int maximumTime = Integer.MAX_VALUE;
+        private int averageTime = -1;
+         
+        private List<StackElement> _invocations = new ArrayList<StackElement>();
+         
+        public MethodResult(int classID, int methodID){
+            this.classID = classID;
+            this.methodID = methodID;
+        }
+         
+        public void addStackElement(StackElement el){
+            _invocations.add(el);
+            if(el.time < minimumTime) minimumTime = el.time;
+            if(el.time > maximumTime) maximumTime = el.time;
+        }
+         
+        public int getMinimumTime(){
+            return minimumTime;
+        }
+         
+        public int getMaximumTime(){
+            return maximumTime;
+        }
+         
+        public int getAverageTime(){
+            if(averageTime == -1){
+                int temp = 0;
+                for(StackElement el : _invocations){
+                    temp += el.time;
+                }
+                averageTime = Math.round(temp/_invocations.size());
+            }
+            return averageTime;
+        }
+         
+        public int getInvocationNumber(){
+            return _invocations.size();
+        }
+    }
+         */
+    
+}

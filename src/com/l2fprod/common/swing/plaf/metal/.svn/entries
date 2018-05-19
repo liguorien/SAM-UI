@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2005-08-09T01:54:36.761416Z"
+   url="http://svn.sourcesecure.co.uk/osflash/samui/trunk/src/com/l2fprod/common/swing/plaf/metal"
+   last-author="ndesy"
+   kind="dir"
+   uuid="3a049629-d2fd-0310-b6cd-bfd351412b0e"
+   revision="26"/>
+<entry
+   committed-rev="1"
+   name="MetalLookAndFeelAddons.java"
+   text-time="2005-08-09T02:04:56.203125Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="4b7b3300875a95a137c14ed76869916c"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:56.171875Z"/>
+<entry
+   committed-rev="1"
+   name="MetalTaskPaneGroupUI.java"
+   text-time="2005-08-09T02:04:56.218750Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="734abf6eb8c555b891bbb6e02c86166f"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:56.187500Z"/>
+</wc-entries>

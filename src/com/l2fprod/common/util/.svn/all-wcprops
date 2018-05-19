@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/osflash/samui/!svn/ver/3/trunk/src/com/l2fprod/common/util
+END
+OS.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/osflash/samui/!svn/ver/3/trunk/src/com/l2fprod/common/util/OS.java
+END
+ResourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/osflash/samui/!svn/ver/3/trunk/src/com/l2fprod/common/util/ResourceManager.java
+END
+AllRB.properties
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/osflash/samui/!svn/ver/3/trunk/src/com/l2fprod/common/util/AllRB.properties
+END
+JVM.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/osflash/samui/!svn/ver/3/trunk/src/com/l2fprod/common/util/JVM.java
+END

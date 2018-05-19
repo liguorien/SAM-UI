@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="SAM-UI" basedir="." default="info">
+	
+        <property file="build.properties"/>
+	
+        <path id="classpath">           
+            <fileset dir="${lib.dir}" includes="**/*.jar"/>      
+        </path>        
+        
+	<target name="info">
+		<echo>SAM-UI ${samui.version} build script</echo>
+		<echo>---------------------------------</echo>
+		<echo>clean</echo>
+		<echo>compile</echo>
+		<echo>jar</echo>
+		<echo>build</echo>
+                <echo>run</echo>
+                <echo>build-and-run</echo>	
+	</target>
+ 
+        <target name="clean">
+           <delete dir="${build.dir}"/>  
+        </target>
+ 
+ 	<target name="compile">
+ 		<mkdir dir="${build.dir}"/>
+ 		<javac srcdir="${src.dir}" destdir="${build.dir}" target="1.5">
+                    <classpath>                   
+                        <path refid="classpath"/>
+                    </classpath>
+		    <!--<compilerarg value="-Xlint:unchecked" />-->
+		</javac>
+		<copy todir="${build.dir}">
+			<fileset dir="${src.dir}">
+				<include name="**/*.gif"/>
+				<include name="**/*.xml"/>
+				<include name="**/*.properties"/>
+				<include name="**/*.as"/>
+			</fileset>
+		</copy>
+ 	</target>
+ 
+        <target name="jar" depends="clean,compile">
+		
+            <echo>Creating ${ant.project.name} ${samui.version} distribuable...</echo>
+ 		
+            <mkdir dir="${dist.dir}"/>
+            <mkdir dir="${dist.lib.dir}"/>
+
+            <jar destfile="${samui.classes}" basedir="${build.dir}">
+                    <manifest>
+                            <attribute name="Main-Class" value="${samui.main}"/>
+                    </manifest>
+            </jar>             
+	</target>
+	
+	<target name="build" depends="jar">
+              
+            <copy toDir="${dist.lib.dir}">
+                <fileset dir="${lib.dir}/jdic">
+                    <include name="**" />
+                </fileset>
+            </copy>
+
+            <jar destfile="${samui.bootstrap}">
+                <manifest>
+                        <attribute name="Main-Class" value="${samui.main}"/>
+                        <attribute name="Class-Path" value="lib/samui-classes.jar lib/jdic.jar"/>
+                </manifest>
+            </jar>
+        
+            <property name="folder-name" value="samui-${samui.version}" />
+            
+            <zip destfile="${dist.dir}/samui-${samui.version}-bin-win32.zip">
+                <zipfileset prefix="${folder-name}" dir="." file="${samui.bootstrap}"/>
+                <zipfileset prefix="${folder-name}/lib/" dir="${dist.lib.dir}" includes="**" excludes="**/linux/**" />                   
+                <zipfileset prefix="${folder-name}" file="COPYING"/>
+                <zipfileset prefix="${folder-name}" file="L2FProd_LICENSE.txt"/>
+                <zipfileset prefix="${folder-name}" file="JDIC_COPYING"/>		
+            </zip>
+            
+            <zip destfile="${dist.dir}/samui-${samui.version}-bin-linux.zip">
+                <zipfileset prefix="${folder-name}" dir="." file="${samui.bootstrap}"/>
+                <zipfileset prefix="${folder-name}/lib/" dir="${dist.lib.dir}" includes="**" excludes="**/windows/**" />                   
+                <zipfileset prefix="${folder-name}" file="COPYING"/>
+                <zipfileset prefix="${folder-name}" file="L2FProd_LICENSE.txt"/>
+                <zipfileset prefix="${folder-name}" file="JDIC_COPYING"/>		
+            </zip>
+            
+            <zip destfile="${dist.dir}/samui-${samui.version}-src.zip">
+                <fileset dir="." includes="${src.dir}/**"/>
+                <fileset dir="." includes="${lib.dir}/**"/>
+                <fileset dir="." includes="L2FProd_LICENSE.txt"/>
+                <fileset dir="." includes="JDIC_COPYING"/>
+                <fileset dir="." includes="COPYING"/>
+                <fileset dir="." includes="build.properties"/>
+                <fileset dir="." includes="build.xml"/>
+            </zip>
+           
+            <delete dir="${dist.lib.dir}"/> 
+            <delete file="${samui.bootstrap}"/>
+	</target>
+ 
+        <target name="run" depends="compile">
+		<echo>Running ${ant.project.name} ${samui.version}</echo>
+                <java classname="${samui.main}" fork="true">
+                     <classpath>  
+                        <path location="${build.dir}" />
+                        <path refid="classpath"/>
+                    </classpath>
+                </java>	
+	</target>
+        <target name="build-and-run" depends="jar">
+		<echo>Running ${ant.project.name} ${samui.version}</echo>
+                <java jar="${samui.classes}" fork="true"/>		
+	</target>	
+</project>

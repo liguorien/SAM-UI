@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2005-08-09T01:54:36.761416Z"
+   url="http://svn.sourcesecure.co.uk/osflash/samui/trunk/src/com/l2fprod/common/swing/plaf/misc"
+   last-author="ndesy"
+   kind="dir"
+   uuid="3a049629-d2fd-0310-b6cd-bfd351412b0e"
+   revision="26"/>
+<entry
+   committed-rev="1"
+   name="GlossyTaskPaneGroupUI.java"
+   text-time="2005-08-09T02:04:55.953125Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="c3c16e17fd5fbb6545df1605e293dfcf"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:55.921875Z"/>
+<entry
+   committed-rev="1"
+   name="IconPackagerButtonBarUI.java"
+   text-time="2005-08-09T02:04:55.968750Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="e057352eb203b5414aa64275084fd3df"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:55.921875Z"/>
+<entry
+   committed-rev="1"
+   name="package.html"
+   text-time="2005-08-09T02:04:55.984375Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="521f8887d20ec777077b643b247826ff"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:55.937500Z"/>
+</wc-entries>

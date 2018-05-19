@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="24"
+   name=""
+   committed-date="2005-08-14T21:41:06.716017Z"
+   url="http://svn.sourcesecure.co.uk/osflash/samui/trunk/src/com/liguorien/samui/project"
+   last-author="ndesy"
+   kind="dir"
+   uuid="3a049629-d2fd-0310-b6cd-bfd351412b0e"
+   revision="26"/>
+<entry
+   committed-rev="24"
+   name="ProjectClasspathEditor.java"
+   text-time="2005-08-14T21:00:43.479341Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="b7fe07ec3fed17378e96b21796d8c8cb"
+   last-author="ndesy"
+   kind="file"/>
+<entry
+   committed-rev="1"
+   name="ExecuteAntTargetListener.java"
+   text-time="2005-08-09T02:05:03.015625Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="9160735a5f178db69aa15b0ca98e6dd5"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:02.937500Z"/>
+<entry
+   committed-rev="24"
+   name="OpenCompilePopupListener.java"
+   text-time="2005-08-14T20:48:15.057466Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="ab6533653aabe03866f93e8f942b540b"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:02.937500Z"/>
+<entry
+   committed-rev="24"
+   name="CompileProjectListener.java"
+   text-time="2005-08-14T17:50:40.104341Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="98d2f306e80920d359ba77e08dbb20c6"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:02.953125Z"/>
+<entry
+   committed-rev="1"
+   name="ProjectConfigView.java"
+   text-time="2005-08-09T02:05:03.046875Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="68f7b585627b43172f8c78a2d5aa6756"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:02.968750Z"/>
+<entry
+   committed-rev="24"
+   name="ProjectToolBar.java"
+   text-time="2005-08-14T20:38:26.776216Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="8870bd9bc7801dc4a70c3f2b9e1d3e7a"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:02.968750Z"/>
+<entry
+   committed-rev="24"
+   name="ProjectClasspath.java"
+   text-time="2005-08-14T21:00:54.901216Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="af145eab1961ae506cf934ae403070e4"
+   last-author="ndesy"
+   kind="file"/>
+<entry
+   committed-rev="24"
+   name="ProjectClasspathDialog.java"
+   text-time="2005-08-14T21:00:50.307466Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="40b802bc371cb53977d617d3bec5dc9f"
+   last-author="ndesy"
+   kind="file"/>
+<entry
+   committed-rev="28"
+   name="ProjectConfig.java"
+   text-time="2005-08-14T23:47:15.869966Z"
+   committed-date="2005-08-14T23:48:18.483917Z"
+   checksum="298734e919368ffa8d52139c7b03c61d"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:02.984375Z"
+   revision="28"/>
+<entry
+   committed-rev="28"
+   name="ProjectConfigModel.java"
+   text-time="2005-08-14T23:47:04.885591Z"
+   committed-date="2005-08-14T23:48:18.483917Z"
+   checksum="a34e88a13f0a07e137ee286855bd12bd"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:03.000000Z"
+   revision="28"/>
+</wc-entries>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="24"
+   name=""
+   committed-date="2005-08-14T21:41:06.716017Z"
+   url="http://svn.sourcesecure.co.uk/osflash/samui/trunk/src/com/liguorien/samui/ui"
+   last-author="ndesy"
+   kind="dir"
+   uuid="3a049629-d2fd-0310-b6cd-bfd351412b0e"
+   revision="26"/>
+<entry
+   committed-rev="24"
+   name="JTab.java"
+   text-time="2005-08-12T18:33:56.015625Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="da70cac79c916921d1e5f77a23cb22b8"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:03.187500Z"/>
+<entry
+   committed-rev="24"
+   name="SWFViewer.java"
+   text-time="2005-08-14T21:17:08.698091Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="c4f505bf3f54a9c96ed2542dc979f096"
+   last-author="ndesy"
+   kind="file"/>
+<entry
+   committed-rev="24"
+   name="JAbstractTab.java"
+   text-time="2005-08-12T19:46:56.828125Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="b348d051189cf60355a81a4f66279508"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:03.187500Z"/>
+<entry
+   committed-rev="24"
+   name="Menu.java"
+   text-time="2005-08-14T21:01:41.448091Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="292113386572777367c1e048d06c0a99"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:03.218750Z"/>
+<entry
+   committed-rev="1"
+   name="TitledPanel.java"
+   text-time="2005-08-09T02:05:03.296875Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="e56fdbda6d030ca5619b849488254b88"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:03.234375Z"/>
+<entry
+   committed-rev="24"
+   name="JTabbedPanel.java"
+   text-time="2005-08-14T12:51:05.238492Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="fe38e2af28ce85fa80f326b7c4b9b1a4"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:03.234375Z"/>
+</wc-entries>

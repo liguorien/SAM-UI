@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="25"
+   name=""
+   committed-date="2005-08-14T21:42:45.719508Z"
+   url="http://svn.sourcesecure.co.uk/osflash/samui/trunk/lib/jdic"
+   last-author="ndesy"
+   kind="dir"
+   revision="26"/>
+<entry
+   name="linux"
+   kind="dir"/>
+<entry
+   committed-rev="25"
+   name="jdic.jar"
+   text-time="2005-06-23T17:33:24.000000Z"
+   committed-date="2005-08-14T21:42:45.719508Z"
+   checksum="9cff529048bb46a19d55abf2c6e761f0"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-14T21:41:41.791841Z"/>
+<entry
+   name="windows"
+   kind="dir"/>
+</wc-entries>

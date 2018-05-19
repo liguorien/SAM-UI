@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="13"
+   name=""
+   committed-date="2005-08-09T23:59:24.362107Z"
+   url="http://svn.sourcesecure.co.uk/osflash/samui/trunk/src/com/liguorien/utils"
+   last-author="ndesy"
+   kind="dir"
+   uuid="3a049629-d2fd-0310-b6cd-bfd351412b0e"
+   revision="26"/>
+<entry
+   committed-rev="1"
+   name="SpringUtil.java"
+   text-time="2005-08-09T02:05:00.562500Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="8a2a8cc11dd4c18e886e37e84e4de2bf"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:00.468750Z"/>
+<entry
+   committed-rev="13"
+   name="IOUtil.java"
+   text-time="2005-08-09T02:06:59.281250Z"
+   committed-date="2005-08-09T23:59:24.362107Z"
+   checksum="da577be6d9c3d54c8cba8f923a10e94d"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:00.515625Z"/>
+<entry
+   committed-rev="1"
+   name="SwingUtil.java"
+   text-time="2005-08-09T02:05:00.609375Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="d738899bd8ed4b8d80b4a4af8f20c455"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:00.531250Z"/>
+<entry
+   committed-rev="1"
+   name="XmlUtil.java"
+   text-time="2005-08-09T02:05:00.609375Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="578807a7f5bcdc9bfed56f523bed43cf"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:00.546875Z"/>
+</wc-entries>

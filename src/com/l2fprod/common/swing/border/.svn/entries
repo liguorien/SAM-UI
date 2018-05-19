@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2005-08-09T01:54:36.761416Z"
+   url="http://svn.sourcesecure.co.uk/osflash/samui/trunk/src/com/l2fprod/common/swing/border"
+   last-author="ndesy"
+   kind="dir"
+   uuid="3a049629-d2fd-0310-b6cd-bfd351412b0e"
+   revision="26"/>
+<entry
+   committed-rev="1"
+   name="FourLineBorder.java"
+   text-time="2005-08-09T02:04:53.875000Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="78fdbc4370bb95b299b43a57b64396dc"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:53.843750Z"/>
+<entry
+   committed-rev="1"
+   name="ButtonBorder.java"
+   text-time="2005-08-09T02:04:53.875000Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="370c8f68d97ade49ca291d73bd3609e1"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:53.859375Z"/>
+</wc-entries>

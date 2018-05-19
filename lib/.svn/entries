@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="25"
+   name=""
+   committed-date="2005-08-14T21:42:45.719508Z"
+   url="http://svn.sourcesecure.co.uk/osflash/samui/trunk/lib"
+   last-author="ndesy"
+   kind="dir"
+   revision="26"/>
+<entry
+   name="jdic"
+   kind="dir"/>
+</wc-entries>

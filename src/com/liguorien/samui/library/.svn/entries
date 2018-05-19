@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="24"
+   name=""
+   committed-date="2005-08-14T21:41:06.716017Z"
+   url="http://svn.sourcesecure.co.uk/osflash/samui/trunk/src/com/liguorien/samui/library"
+   last-author="ndesy"
+   kind="dir"
+   uuid="3a049629-d2fd-0310-b6cd-bfd351412b0e"
+   revision="26"/>
+<entry
+   committed-rev="20"
+   name="LibraryView.java"
+   text-time="2005-08-11T00:34:10.892150Z"
+   committed-date="2005-08-12T16:31:35.713299Z"
+   checksum="212f8df732a7731e2e25057b9bc3acfc"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:02.390625Z"/>
+<entry
+   committed-rev="24"
+   name="NewSymbolDialog.java"
+   text-time="2005-08-12T16:44:15.406250Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="6cd32263a8f0ff0ba2ae2654f357e211"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:02.406250Z"/>
+<entry
+   committed-rev="24"
+   name="LibraryButton.java"
+   text-time="2005-08-14T20:39:39.948091Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="4fb34db2c7e74adb4d504c60bb832543"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:02.421875Z"/>
+<entry
+   committed-rev="1"
+   name="LibraryFolder.java"
+   text-time="2005-08-09T02:05:02.546875Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="23eea4c8c77a96b2b5e5c627daa27b9d"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:02.421875Z"/>
+<entry
+   committed-rev="1"
+   name="LibrarySymbolRenderer.java"
+   text-time="2005-08-09T02:05:02.562500Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="18d1020ba860ba7ba37f839180cf877d"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:02.437500Z"/>
+<entry
+   committed-rev="13"
+   name="Library.java"
+   text-time="2005-08-09T23:40:09.081512Z"
+   committed-date="2005-08-09T23:59:24.362107Z"
+   checksum="e4ac607fb46915df53cf61a102ca18aa"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:02.437500Z"/>
+<entry
+   committed-rev="20"
+   name="LibraryTree.java"
+   text-time="2005-08-10T23:10:24.532775Z"
+   committed-date="2005-08-12T16:31:35.713299Z"
+   checksum="51c3a9abc2990b0f227a6ee1df7595c5"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:02.453125Z"/>
+<entry
+   committed-rev="20"
+   name="LibraryModel.java"
+   text-time="2005-08-10T23:18:45.235900Z"
+   committed-date="2005-08-12T16:31:35.713299Z"
+   checksum="e0b5bfa076fd186b8c5a26e1331882c8"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:02.468750Z"/>
+<entry
+   committed-rev="20"
+   name="LibrarySymbol.java"
+   text-time="2005-08-10T23:20:02.657775Z"
+   committed-date="2005-08-12T16:31:35.713299Z"
+   checksum="ffe6f17ecdbcfb08cd1134194fd97581"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:02.468750Z"/>
+<entry
+   committed-rev="24"
+   name="LibrarySymbolPanel.java"
+   text-time="2005-08-12T19:49:09.093750Z"
+   committed-date="2005-08-14T21:41:06.716017Z"
+   checksum="949a6b91c52c45646b9ee14e02a23dcc"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:05:02.484375Z"/>
+</wc-entries>

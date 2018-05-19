@@ -1,0 +1,79 @@
+8
+
+dir
+26
+http://svn.sourcesecure.co.uk/osflash/samui/trunk/src/com/l2fprod/common/util
+
+
+
+
+2005-08-09T01:54:36.761416Z
+1
+ndesy
+has-props
+has-prop-mods
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3a049629-d2fd-0310-b6cd-bfd351412b0e
+
+OS.java
+file
+
+
+
+
+2005-08-09T02:05:00.171875Z
+9f574f3fde3ac27a04c31c56f84af5dc
+2005-08-09T01:54:36.761416Z
+1
+ndesy
+
+ResourceManager.java
+file
+
+
+
+
+2005-08-09T02:05:00.187500Z
+720a03090250d5cc8cf1ecff1b420f54
+2005-08-09T01:54:36.761416Z
+1
+ndesy
+
+converter
+dir
+
+AllRB.properties
+file
+
+
+
+
+2005-08-09T02:05:00.203125Z
+c141770a260fe59fa3f27e70b6367334
+2005-08-09T01:54:36.761416Z
+1
+ndesy
+
+JVM.java
+file
+
+
+
+
+2005-08-09T02:05:00.203125Z
+81968753d0e418e9d202f94cfe768871
+2005-08-09T01:54:36.761416Z
+1
+ndesy
+

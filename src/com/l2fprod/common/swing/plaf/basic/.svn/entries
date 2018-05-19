@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2005-08-09T01:54:36.761416Z"
+   url="http://svn.sourcesecure.co.uk/osflash/samui/trunk/src/com/l2fprod/common/swing/plaf/basic"
+   last-author="ndesy"
+   kind="dir"
+   uuid="3a049629-d2fd-0310-b6cd-bfd351412b0e"
+   revision="26"/>
+<entry
+   committed-rev="1"
+   name="BasicButtonBarUI.java"
+   text-time="2005-08-09T02:04:54.578125Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="b7f3553f26bef38729ac8a641106a475"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:54.453125Z"/>
+<entry
+   committed-rev="1"
+   name="BasicOutlookBarUI.java"
+   text-time="2005-08-09T02:04:54.593750Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="ca18df45e124ec0778e7be3df94f5239"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:54.468750Z"/>
+<entry
+   committed-rev="1"
+   name="BasicTaskPaneGroupUI.java"
+   text-time="2005-08-09T02:04:54.625000Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="1f9f847caed34058643529b376902ee9"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:54.484375Z"/>
+<entry
+   committed-rev="1"
+   name="BasicTaskPaneUI.java"
+   text-time="2005-08-09T02:04:54.640625Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="98d791f15ed5917a2f6c1156e0fe1561"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:54.500000Z"/>
+<entry
+   committed-rev="1"
+   name="BasicOutlookButtonUI.java"
+   text-time="2005-08-09T02:04:54.656250Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="2d87a6b7a8763a6f7695eebfb77f77bf"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:54.515625Z"/>
+<entry
+   committed-rev="1"
+   name="BasicFontChooserUI.java"
+   text-time="2005-08-09T02:04:54.671875Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="431829c530fb464e24cf7aee75ba2f0c"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:54.515625Z"/>
+<entry
+   committed-rev="1"
+   name="BasicLinkButtonUI.java"
+   text-time="2005-08-09T02:04:54.687500Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="b0dc4b739d54d75a7d3d36297e9dd246"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:54.531250Z"/>
+<entry
+   committed-rev="1"
+   name="BasicLookAndFeelAddons.java"
+   text-time="2005-08-09T02:04:54.718750Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="7d5948d70706750ac9176db226ad2c9d"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:54.546875Z"/>
+<entry
+   committed-rev="1"
+   name="package.html"
+   text-time="2005-08-09T02:04:54.734375Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="b311eb6c962975b9a5ae8350880027fb"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:54.562500Z"/>
+</wc-entries>

@@ -1,0 +1,23 @@
+/*
+ * Test.java
+ *
+ * Created on August 9, 2005, 10:03 PM
+ *
+ * To change this template, choose Tools | Options and locate the template under
+ * the Source Creation and Management node. Right-click the template and choose
+ * Open. You can then make changes to the template in the Source Editor.
+ */
+
+package Templates.Classes;
+
+/**
+ *
+ * @author Nico
+ */
+public class Class {
+    
+    /** Creates a new instance of Test */
+    public Class() {
+    }
+    
+}

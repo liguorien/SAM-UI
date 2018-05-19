@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2005-08-09T01:54:36.761416Z"
+   url="http://svn.sourcesecure.co.uk/osflash/samui/trunk/src/com/l2fprod/common/swing/plaf/aqua"
+   last-author="ndesy"
+   kind="dir"
+   uuid="3a049629-d2fd-0310-b6cd-bfd351412b0e"
+   revision="26"/>
+<entry
+   committed-rev="1"
+   name="AquaLookAndFeelAddons.java"
+   text-time="2005-08-09T02:04:54.984375Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="14f41018375628914ec08b8d88759250"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:54.968750Z"/>
+</wc-entries>

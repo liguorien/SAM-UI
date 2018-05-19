@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/osflash/samui/!svn/ver/3/trunk/src/com/l2fprod/common/beans
+END
+BeanInfoResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/osflash/samui/!svn/ver/3/trunk/src/com/l2fprod/common/beans/BeanInfoResolver.java
+END
+ExtendedPropertyDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/osflash/samui/!svn/ver/3/trunk/src/com/l2fprod/common/beans/ExtendedPropertyDescriptor.java
+END
+BeanUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/osflash/samui/!svn/ver/3/trunk/src/com/l2fprod/common/beans/BeanUtils.java
+END
+DefaultBeanDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/osflash/samui/!svn/ver/3/trunk/src/com/l2fprod/common/beans/DefaultBeanDescriptor.java
+END
+BaseBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/osflash/samui/!svn/ver/3/trunk/src/com/l2fprod/common/beans/BaseBeanInfo.java
+END

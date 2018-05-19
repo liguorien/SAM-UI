@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<project name="MyProject" basedir="." default="compile">
+	
+	<property file="build.properties"/>			
+	
+	<target name="compile">		
+		
+		<exec executable="${swfmill.home}swfmill">		
+			<arg line="simple" />
+			<arg line="${swfmill.config}" />
+			<arg line="${project.swf}" />			
+		</exec>
+		
+		
+		<condition property="strict" value="-strict" else="">			
+			<istrue value="${mtasc.strict}" />
+		</condition>
+		
+		<condition property="verbose" value="-v" else="">			
+			<istrue value="${mtasc.verbose}" />
+		</condition>
+		
+		<condition property="mx" value="-mx" else="">			
+			<istrue value="${mtasc.mx}" />
+		</condition>
+		
+		<condition property="keep" value="-keep" else="">			
+			<istrue value="${mtasc.keep}" />
+		</condition>
+		
+		<condition property="separate" value="-separate" else="">			
+			<istrue value="${mtasc.separate}" />
+		</condition>
+		
+		<condition property="flash6" value="-flash6" else="">			
+			<istrue value="${mtasc.flash6}" />
+		</condition>                
+                
+                <condition property="main-class" value="-main SamuiMain.as -trace SamuiOutput.as -cp src" else="-main ${project.mainclass}">			
+			<istrue value="${samui.output}" />
+		</condition>
+                
+		<condition property="samui-output" value="-trace SamuiOutput.log -cp src SamuiOutput.as" else="">			
+			<istrue value="${samui.output}" />
+		</condition>
+		
+                <condition property="output-mode" value="-trace SamuiProfilerOutput.log -cp src SamuiProfilerOutput.as" else="${samui-output}">			
+			<istrue value="${samui.profiler}" />
+		</condition>
+		
+                <echo>${mtasc.home}mtasc -cp ${project.classpath} -cp ${system.classpath} -main ${project.mainclass} -swf ${project.swf} ${strict} ${verbose} ${mx} ${separate} ${flash6} ${mtasc.optional} ${samui-output}</echo>
+                
+		<!-- project compilation  -->
+		<exec executable="${mtasc.home}mtasc">
+			<arg line="-cp ${project.classpath}"/>
+			<arg line="-cp ${system.classpath}"/>
+			<arg line="-main ${project.mainclass}"/>
+			<arg line="-swf ${project.swf}"/>
+			<arg line="${strict}"/>
+			<arg line="${verbose}"/>
+			<arg line="${mx}"/>
+			<arg line="${keep}"/>
+			<arg line="${separate}"/>
+			<arg line="${flash6}"/>
+                        <arg line="${mtasc.optional}"/>
+                        <arg line="${output-mode}" />
+		</exec>
+	</target>	
+</project>

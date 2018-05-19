@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2005-08-09T01:54:36.761416Z"
+   url="http://svn.sourcesecure.co.uk/osflash/samui/trunk/src/com/l2fprod/common/model"
+   last-author="ndesy"
+   kind="dir"
+   uuid="3a049629-d2fd-0310-b6cd-bfd351412b0e"
+   revision="26"/>
+<entry
+   committed-rev="1"
+   name="BaseObject.java"
+   text-time="2005-08-09T02:04:53.062500Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="dc270b8c9858babfa0801cbd232b9a96"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:52.875000Z"/>
+<entry
+   committed-rev="1"
+   name="DefaultObjectRenderer.java"
+   text-time="2005-08-09T02:04:53.078125Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="5e3f633e37813185a8a51a1d1470158c"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:52.906250Z"/>
+<entry
+   committed-rev="1"
+   name="Openable.java"
+   text-time="2005-08-09T02:04:53.109375Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="ca4f60d7c18a2ee9b65955ab9b613db9"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:52.937500Z"/>
+<entry
+   committed-rev="1"
+   name="DefaultBeanInfoResolver.java"
+   text-time="2005-08-09T02:04:53.125000Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="4354e6c30e40c3f65798d6fcd98bb483"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:52.953125Z"/>
+<entry
+   committed-rev="1"
+   name="HasId.java"
+   text-time="2005-08-09T02:04:53.156250Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="30c1e844943603ccb0582c2f1a36b60e"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:52.984375Z"/>
+<entry
+   committed-rev="1"
+   name="TitledObject.java"
+   text-time="2005-08-09T02:04:53.171875Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="955728c741c29265b7df27bc4656d980"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:53.000000Z"/>
+<entry
+   committed-rev="1"
+   name="ObjectRenderer.java"
+   text-time="2005-08-09T02:04:53.203125Z"
+   committed-date="2005-08-09T01:54:36.761416Z"
+   checksum="569b6d359edc86b5d10e6c6d9554a19c"
+   last-author="ndesy"
+   kind="file"
+   prop-time="2005-08-09T02:04:53.031250Z"/>
+</wc-entries>
